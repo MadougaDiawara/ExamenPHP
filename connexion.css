@@ -1,0 +1,95 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+#entete {
+    margin: 0; /* Supprime les marges externes */
+    width: 100%; /* Occupe toute la largeur de la fenêtre */
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    position: relative; /* Positionnement relatif */
+    overflow: hidden; /* Masque tout ce qui sort de la fenêtre */
+    background-color: transparent; /* Couleur de fond transparente */
+    z-index: 1; /* Mettre au-dessus de tout le contenu */
+}
+
+.video_entete{
+    left: 0; /* Positionnement à gauche */
+    width: 100%; /* Occupe toute la largeur de la fenêtre */
+    height: 100%; /* Occupe toute la hauteur de la fenêtre */
+    position: absolute; /* Positionnement absolu */
+    z-index: 0; /* Mettre au-dessus de tout le contenu */
+    object-fit: cover; /* Couvre toute la zone */
+    object-position: center; /* Centre la vidéo */
+}
+
+.NomSite {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%; 
+    color:white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    font-family:  "Script MT Bold", "Sakkal Majalla";
+}
+.NomSitePied {
+    font-size: 25px; 
+    text-align: center;
+    margin: 20px;
+    padding-top: 5%; 
+    color:white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    font-family:  "Script MT Bold", "Sakkal Majalla";
+}
+
+form {
+    display: flex; /* Utilisation de flexbox */                     
+    flex-direction: column; /* Orientation verticale des éléments */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Alignement centré */
+    max-width: 400px; /* Largeur maximale */
+    background-color: white; /* Fond blanc */
+    border: 2px solid gray; /* Bordure grise */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre légère */
+}
+
+label {
+    display: block; /* Chaque étiquette prend une nouvelle ligne */
+    margin-bottom: 5px; /* Espacement en dessous de chaque étiquette */
+    color: black; /* Couleur du texte des étiquettes */
+}
+
+input[type="email"],
+input[type="password"] {
+    width: 100%; /* Prend toute la largeur du formulaire */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement entre les champs */
+    border: 1px solid gray; /* Bordure des champs */
+    border-radius: 5px; /* Coins arrondis pour les champs */
+    background-color: rgba(255, 255, 255, 1); /* Fond blanc */
+    color: black; /* Couleur du texte */
+}
+
+input[type="submit"] {
+    background-color: blue; /* Fond bleu pour le bouton */
+    color: white; /* Texte blanc */
+    border: none; /* Pas de bordure */
+    padding: 10px; /* Espacement interne */
+    border-radius: 5px; /* Coins arrondis */
+    cursor: pointer; /* Curseur pointer sur hover */
+    transition: background-color 0.3s; /* Effet de transition */
+    width: 100%; /* Prend toute la largeur */
+}
+
+input[type="submit"]:hover {
+    background-color: darkblue; /* Couleur au survol */
+}
+

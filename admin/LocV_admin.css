@@ -1,0 +1,284 @@
+html, body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+}
+
+#entete {
+    position: relative;
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    overflow: hidden;
+}
+
+.video_entete {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%; 
+    object-fit: cover; /* Couvre toute la zone */
+    z-index: 0; /* Mettre la vidéo en arrière-plan */
+}
+
+.overlay {
+    position: relative;
+    z-index: 1; /* Mettre le contenu au-dessus de la vidéo */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; /* Centre verticalement */
+    height: 100%;
+}
+
+.NomSite {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%; 
+    color: white;
+    font-weight: bold;
+    font-family: "Script MT Bold", "Sakkal Majalla";
+}
+
+#footer_admin {
+    background-color: white; /* Couleur de fond pour le footer */
+    padding: 5px; /* Diminuez l'espacement intérieur */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+}
+
+.small-button {
+    background-color: blue;
+    color: white;
+    padding: 5px 10px; /* Réduit le padding */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+    width: auto; /* Ajuste la largeur */
+}
+
+.small-button:hover {
+    background-color: white;
+}
+
+h1 {
+    text-align: center; /* Centre le texte */
+    color: #212161; /* Assurez-vous que la couleur est définie */
+}
+.NomSitePied {
+    font-size: 25px; 
+    text-align: center;
+    margin: 20px;
+    padding-top: 5%; 
+    color:rgb(15, 15, 60);
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    font-family:  "Script MT Bold", "Sakkal Majalla";
+}
+
+#Formauto {
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    background-color: rgba(0, 0, 0, 0.5); /* Fond semi-transparent */
+    margin: 20px auto; /* Centre le formulaire */
+    width: 70%;
+    padding: 10px; /* Espacement interne */
+    text-align: center;
+    border-radius: 15px; /* Coins arrondis */
+}
+
+#auto {
+    border: none;
+    padding-left: 10px; /* Ajoute du padding */
+    border-radius: 15px; /* Coins arrondis */
+    color: #FFF;
+
+}
+
+#motcle {
+    height: 30px;
+    width: 200px; /* Ajustez selon vos besoins */
+    border: none;
+    padding-left: 10px; /* Ajoute du padding */
+    border-radius: 5px; /* Coins arrondis */
+    
+}
+
+.btfind {
+    height: 30px;
+    width: 100px; /* Ajustez selon vos besoins */
+    border: none;
+    background-color:blue;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 15px; /* Coins arrondis */
+}
+
+
+#entete a {
+    position: relative; /* Nécessaire pour le positionnement absolu des liens */
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    color: white; /* Couleur des liens */
+    padding: 14px 20px; /* Espacement interne */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin: 0 10px; /* Espacement entre les liens */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+#entete a:hover {
+    background-color: blue; /* Fond au survol */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+/* Styles pour les articles */
+#articles {
+    background-color: black; /* Couleur de fond pour la section Articles */
+    padding: 40px; /* Augmentez l'espacement intérieur */
+    display: flex; /* Utilise Flexbox pour l'alignement */
+    flex-wrap: wrap; /* Permet d'avoir plusieurs lignes */
+    justify-content: center; /* Centre les éléments horizontalement */
+    position: relative; /* Nécessaire pour le positionnement absolu des images */
+    margin: 0;
+}
+
+.column {
+    background-color: black; /* Couleur de fond pour chaque colonne */
+    padding: 40px; /* Augmentez l'espacement intérieur */
+    position: relative; /* Position relative pour le conteneur des images */
+    margin: 0; /* Espace entre les colonnes */
+}
+#auto {
+    border: 2px solid white;
+    border-radius: 20px;
+    font-weight: bold;
+    font-size: 20px;
+    width: 150px;
+    min-height: 200px;
+    margin: 5px;                /* Réduit l'espace entre les images */
+    padding: 10px;              /* Ajuste le rembourrage interne */
+    box-sizing: border-box;     /* Inclut le padding et la bordure dans la largeur totale */
+}
+
+#auto img {
+    margin: 0;                  /* Supprime les marges autour de l'image */
+    width: 130px;
+    height: 100px;
+    border-radius: 10px;
+    border: 1px solid white;
+}
+
+/* Ajoutez un style pour superposer les images */
+.hidden {
+    opacity: 0.7; /* Opacité pour les images superposées */
+}
+
+a{
+    text-decoration: none;
+}
+#entete .login{
+    opacity: 0.8; /* Opacité pour les images superposées */
+    color: blue; /* Couleur des liens */
+    Padding: 14px 20px; /* Espacement interne */
+    margin: 8px 0; /* Ajustez la marge */
+    border : 1px solid black; /* Ajoute une bordure */
+    border-right: none;
+    cursor: pointer;
+    width: 5%;
+    right: 0;
+    position: absolute;
+    z-index: 10;
+}
+#entete .login:hover{
+    opacity: 1;
+    background-color: white;
+    border: none;
+    border-radius: 10px;
+}
+
+
+h2 {
+    text-align: center; /* Centre les titres h2 */
+    color: rgb(25, 25, 90); /* Couleur des titres */
+    margin: 20px 0; /* Espacement autour des titres */
+}
+
+table {
+    width: 80%; /* Largeur de la table */
+    margin: 20px auto; /* Centre la table */
+    border-collapse: collapse; /* Supprime les espaces entre les cellules */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Ombre pour donner de la profondeur */
+}
+
+th, td {
+    padding: 10px; /* Espacement interne */
+    text-align: center; /* Centre le texte dans les cellules */
+}
+
+th {
+    background-color: rgb(46, 46, 154); /* Couleur de fond pour les en-têtes */
+    color: white; /* Couleur du texte des en-têtes */
+}
+
+tr:nth-child(even) {
+    background-color: #f2f2f2; /* Couleur de fond pour les lignes paires */
+}
+
+form {
+    display: flex; /* Utilisation de flexbox */                     
+    flex-direction: column; /* Orientation verticale des éléments */
+    justify-content: center; /* Centre horizontalement */
+    align-items: center; /* Centre verticalement */
+    text-align: center; /* Alignement centré */
+    max-width: 400px; /* Largeur maximale */
+    background-color: white; /* Fond blanc */
+    border: 2px solid gray; /* Bordure grise */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin: 0 auto; /* Centre le formulaire */
+    animation: fadeIn 1s; /* Animation de fondu */
+}
+
+input[type="text"],
+input[type="number"],
+input[type="email"],
+textarea {
+    width: 100%; /* Prend toute la largeur du formulaire */
+    padding: 10px; /* Espacement interne */
+    margin-bottom: 15px; /* Espacement entre les champs */
+    border: 1px solid gray; /* Bordure des champs */
+    border-radius: 5px; /* Coins arrondis pour les champs */
+    background-color: rgba(255, 255, 255, 1); /* Fond blanc */
+    color: black; /* Couleur du texte */
+    
+}
+
+button {
+    background-color: rgb(49, 49, 137);
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s; /* Effet de transition */
+    width: 100%; /* Prend toute la largeur */
+}
+
+button:hover {
+    background-color: white;
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Commence transparent */
+    }
+    to {
+        opacity: 1; /* Termine opaque */
+    }
+}
+
+

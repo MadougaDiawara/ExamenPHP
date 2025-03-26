@@ -1,0 +1,52 @@
+#article_detail {
+    background-color: #ffffff; /* Couleur de fond blanche */
+    border: 2px solid #007bff; /* Bordure bleue */
+    border-radius: 10px; /* Coins arrondis */
+    padding: 20px; /* Espacement interne */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Ombre pour un effet d'élévation */
+    margin: 20px auto; /* Marges en haut et en bas, centré horizontalement */
+    max-width: 600px; /* Largeur maximale */
+    text-align: center; /* Centrer le texte */
+}
+
+#article_detail img {
+    border: 2px solid #007bff; /* Bordure bleue autour de l'image */
+    border-radius: 10px; /* Coins arrondis pour l'image */
+    max-width: 100%; /* Responsive - s'adapte à la largeur de son conteneur */
+    height: auto; /* Garde les proportions de l'image */
+    margin-bottom: 15px; /* Espacement en bas de l'image */
+}
+
+h1 {
+    font-size: 24px; /* Taille du titre */
+    margin-bottom: 10px; /* Espacement en bas du titre */
+    font-weight: bold; /* Texte en gras */
+    text-align: center; /* Centre le titre */
+    color: #542878; /* Couleur du titre */
+}
+
+p {
+    color: #333; /* Couleur du texte normal */
+    font-size: 18px; /* Taille du texte */
+}
+
+.reservation-button {
+    background-color: rgb(47, 27, 66); /* Couleur de fond gris */
+    color: white; /* Couleur du texte du bouton */
+    border: none; /* Pas de bordure */
+    border-radius: 5px; /* Coins arrondis */
+    padding: 10px 20px; /* Espacement interne */
+    cursor: pointer; /* Curseur en forme de main */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+.reservation-button:hover {
+    background-color: bluedark; /* Couleur au survol */
+}
+
+/* Styles pour les messages d'alerte */
+.alert-message {
+    color: red; /* Couleur rouge pour les messages d'alerte */
+    font-weight: bold; /* Texte en gras */
+    margin-top: 10px; /* Espacement en haut */
+}

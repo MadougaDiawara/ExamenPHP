@@ -1,0 +1,129 @@
+body{
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+
+}
+#entete {
+    margin: 0; /* Supprime les marges externes */
+    width: 100%; /* Occupe toute la largeur de la fenêtre */
+    height: 100vh; /* Occupe toute la hauteur de la fenêtre */
+    position: relative; /* Positionnement relatif */
+    overflow: hidden; /* Masque tout ce qui sort de la fenêtre */
+    background-color: transparent; /* Couleur de fond transparente */
+    z-index: 1; /* Mettre au-dessus de tout le contenu */
+}
+
+.video_entete{
+    left: 0; /* Positionnement à gauche */
+    width: 100%; /* Occupe toute la largeur de la fenêtre */
+    height: 100%; /* Occupe toute la hauteur de la fenêtre */
+    position: absolute; /* Positionnement absolu */
+    z-index: 0; /* Mettre au-dessus de tout le contenu */
+    object-fit: cover; /* Couvre toute la zone */
+    object-position: center; /* Centre la vidéo */
+}
+
+.NomSite {
+    font-size: 50px;
+    text-align: center;
+    margin: 0;
+    padding-top: 5%; 
+    color:white;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    font-family:  "Script MT Bold", "Sakkal Majalla";
+}
+.NomSitePied {
+    font-size: 25px; 
+    text-align: center;
+    margin: 20px;
+    padding-top: 5%; 
+    color:black;
+    font-weight: bold;
+    position: relative;
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    font-family:  "Script MT Bold", "Sakkal Majalla";
+}
+
+#entete a {
+    position: relative; /* Nécessaire pour le positionnement absolu des liens */
+    z-index: 1; /* Mettre au-dessus de la vidéo */
+    color: white; /* Couleur des liens */
+    padding: 14px 20px; /* Espacement interne */
+    text-decoration: none; /* Supprime le soulignement des liens */
+    margin: 0 10px; /* Espacement entre les liens */
+    transition: background-color 0.3s; /* Transition pour l'effet de survol */
+}
+
+#entete a:hover {
+    background-color: blue; /* Fond au survol */
+    border-radius: 10px; /* Coins arrondis */
+}
+
+
+.faq-container {
+    background-color:whitesmoke;
+    padding: 40px;
+    margin: 0;
+    color: black; /* Change la couleur du texte si nécessaire */
+    min-height: 100vh; /* Prend toute la hauteur de la fenêtre */
+}
+    
+    .faq-section {
+        background-color: whitesmoke;
+        border-radius: 10px; /*Coins arrondis 1/3 de la page */
+        padding: 40px;
+    }
+    
+    
+    
+    .faq-answer {
+        display: none ; /* Masquer les réponses par défaut */
+        opacity: 0; /* Opacité à 0 */
+        transition: opacity 0.3s; /* Transition d'opacité */
+    }
+    
+    .faq-answer.show {
+        display: block; /* Afficher la réponse si la classe show est présente */
+        opacity: 1; /* Opacité à 1 */
+    }
+    
+    .faq-question {
+        cursor: pointer; /* Changer le curseur pour indiquer que c'est cliquable */
+        transition: color 0.3s; /* Transition de couleur */
+    }
+    
+    .faq-question:hover {
+        color: rgb(43, 8, 76); /* Change la couleur au survol */
+        transform: scales(1.05); /* Agrandir légèrement au survol */
+        
+    }
+
+    .faq-question::after {
+        content: "+"; /* Ajouter un signe + à la fin du texte */
+        float: left; /* Aligner à droite */
+    }
+    
+    .faq-question.open::after {
+        content: "-"; /* Changer le signe + en - */
+    }
+    
+    .faq-question.open + .faq-answer {
+        display: block; /* Afficher la réponse si la question est ouverte */
+    }
+    
+    .faq-item {
+        margin: 10px 0;
+    }
+   .footer {
+    background-color: whitesmoke;
+    color: gray;
+    text-align: center;
+    padding: 5px 0;
+    width: 100%; 
+   }

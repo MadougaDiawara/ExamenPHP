@@ -1,0 +1,42 @@
+.container {
+    display: flex;
+}
+
+.sidebar {
+    width: 30%; /* Largeur de la sidebar */
+    background-color : white; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+    padding: 20px;
+}
+
+.main-content {
+    width: 70%; /* Largeur du contenu principal */
+    padding: 20px;
+    background-color: white; /* Couleur de fond */
+    color: black; /* Couleur du texte */
+}
+
+.content-section {
+    display: none; /* Masquer par défaut */
+}
+
+#about {
+    display: block; /* Afficher par défaut la section À Propos */
+}
+
+#footer {
+    background-color: gray; /* Couleur de fond pour le footer */
+    padding: 5px; /* Diminuez l'espacement intérieur */
+    color: black; /* Couleur du texte */
+    text-align: center; /* Centrer le texte */
+    z-index: 1; /* Mettre au-dessus de la video */
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; /* Commence transparent */
+    }
+    to {
+        opacity: 1; /* Termine opaque */
+    }
+}
